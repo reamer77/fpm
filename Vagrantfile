@@ -12,8 +12,8 @@ Vagrant.configure("2") do |config|
   end
 
   config.vm.define "debian6" do |centos6|
-    centos6.vm.box = "debian6"
-    centos6.vm.box_url = "http://vagrant-jls.objects.dreamhost.com/Debian-6.0.7-amd64-netboot.box"
+    debian6.vm.box = "debian6"
+    debian6.vm.box_url = "http://vagrant-jls.objects.dreamhost.com/Debian-6.0.7-amd64-netboot.box"
   end
 
   config.vm.provision :puppet do |puppet|
